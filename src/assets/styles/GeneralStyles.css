@@ -1,0 +1,345 @@
+.dashContainer {
+  padding: 30px;
+  border-width: 1.6px;
+  border-style: dashed;
+  border-color: rgba(52, 115, 239, 1);
+  border-radius: 20px;
+  width: 450px;
+}
+
+.layoutContainer {
+  display: flex;
+}
+
+.layoutContent {
+  width: 100%;
+  padding-left: 259px;
+  padding-right: 30px;
+  padding-bottom: 300px;
+  background-color: #f8faff;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+
+.lightText {
+  font-family: "Outfit", sans-serif !important;
+  font-weight: 200 !important;
+}
+.regularText {
+  font-family: "Outfit", sans-serif !important;
+  font-weight: 400 !important;
+}
+.mediumText {
+  font-family: "Outfit", sans-serif !important;
+  font-weight: 500 !important;
+}
+.semiBoldText {
+  font-family: "Outfit", sans-serif !important;
+  font-weight: 600 !important;
+}
+.boldText {
+  font-family: "Outfit", sans-serif !important;
+  font-weight: 700 !important;
+}
+.f10 {
+  font-size: 0.625rem !important;
+}
+.f11 {
+  font-size: 0.688rem !important;
+}
+.f12 {
+  font-size: 0.75rem !important;
+}
+.f14 {
+  font-size: 0.875rem !important;
+}
+.f16 {
+  font-size: 1rem !important;
+}
+.f18 {
+  font-size: 1.125rem !important;
+}
+.f20 {
+  font-size: 1.25rem !important;
+}
+.f22 {
+  font-size: 1.375rem !important;
+}
+.f24 {
+  font-size: 1.5rem !important;
+}
+.f26 {
+  font-size: 1.625rem !important;
+}
+.f28 {
+  font-size: 1.75rem !important;
+}
+.f30 {
+  font-size: 1.875rem !important;
+}
+.f32 {
+  font-size: 2rem !important;
+}
+
+.f34 {
+  font-size: 2.125rem !important;
+}
+
+.f36 {
+  font-size: 2.25rem !important;
+}
+
+.f38 {
+  font-size: 2.375rem !important;
+}
+
+.f40 {
+  font-size: 2.5rem !important;
+}
+
+.f42 {
+  font-size: 2.625rem !important;
+}
+
+.f44 {
+  font-size: 2.75rem !important;
+}
+
+.f46 {
+  font-size: 2.875rem !important;
+}
+.f48 {
+  font-size: 3rem !important;
+}
+.f50 {
+  font-size: 3.125rem !important;
+}
+.f52 {
+  font-size: 3.25rem !important;
+}
+.f54 {
+  font-size: 3.375rem !important;
+}
+
+.f55 {
+  font-size: 3.438rem !important;
+}
+.f56 {
+  font-size: 3.5rem !important;
+}
+.f58 {
+  font-size: 3.625rem !important;
+}
+.f60 {
+  font-size: 3.75rem !important;
+}
+.f62 {
+  font-size: 3.875rem !important;
+}
+
+/* PADDING */
+
+.flex {
+  display: flex;
+}
+.justifyBetween {
+  justify-content: space-between;
+}
+.justifyCenter {
+  justify-content: center;
+}
+.alignCenter {
+  align-items: center;
+}
+
+.pt10 {
+  padding-top: 10px;
+}
+
+.pt15 {
+  padding-top: 15px;
+}
+
+.pt20 {
+  padding-top: 20px;
+}
+
+.pt25 {
+  padding-top: 25px;
+}
+
+.pt30 {
+  padding-top: 30px;
+}
+
+.pt35 {
+  padding-top: 35px;
+}
+.pt40 {
+  padding-top: 40px;
+}
+
+.pb10 {
+  padding-bottom: 10px;
+}
+
+.pb15 {
+  padding-bottom: 15px;
+}
+
+.pb20 {
+  padding-bottom: 20px;
+}
+
+.pb25 {
+  padding-bottom: 25px;
+}
+
+.pb30 {
+  padding-bottom: 30px;
+}
+
+.pb35 {
+  padding-bottom: 35px;
+}
+.pb40 {
+  padding-bottom: 40px;
+}
+
+.pb46 {
+  padding-bottom: 46px;
+}
+
+.pl10 {
+  padding-left: 10px;
+}
+
+.pl15 {
+  padding-left: 15px;
+}
+
+.pl20 {
+  padding-left: 20px;
+}
+
+.pl25 {
+  padding-left: 25px;
+}
+
+.pl30 {
+  padding-left: 30px;
+}
+
+.pl35 {
+  padding-left: 35px;
+}
+.pl40 {
+  padding-left: 40px;
+}
+.pr10 {
+  padding-right: 10px;
+}
+
+.pr15 {
+  padding-right: 15px;
+}
+
+.pr20 {
+  padding-right: 20px;
+}
+
+.pr25 {
+  padding-right: 25px;
+}
+
+.pr30 {
+  padding-right: 30px;
+}
+
+.pr35 {
+  padding-right: 35px;
+}
+.pr40 {
+  padding-right: 40px;
+}
+
+.pr50 {
+  padding-right: 50px;
+}
+
+.pr60 {
+  padding-right: 60px;
+}
+
+.mb40 {
+  margin-bottom: 40px;
+}
+
+.pl50 {
+  padding-left: 50px;
+}
+
+.pl60 {
+  padding-left: 60px;
+}
+.pl70 {
+  padding-left: 70px;
+}
+
+/* colors */
+
+.white {
+  color: #fff;
+}
+
+.bgWhite {
+  background-color: #fff;
+}
+.black {
+  color: #000;
+}
+
+.hAuto {
+  height: auto;
+}
+.h100 {
+  height: 100%;
+}
+.borderBt {
+  border-bottom: 1px solid #ebebeb;
+}
+.textCenter {
+  text-align: center;
+}
+.border {
+  border: 1px solid #ebebeb;
+}
+
+.loanTable {
+  border: none !important;
+  font-family: "Outfit", sans-serif !important;
+  font-weight: 500 !important;
+  /* font-size: 1rem !important; */
+  color: #000 !important;
+}
+.MuiDataGrid-columnSeparator {
+  display: none !important;
+}
+/* mediaQueries  */
+
+@media (max-width: 800px) {
+  .dashContainer {
+    width: 100%;
+    padding: 10px;
+    /* height: 100%; */
+    display: flex;
+    align-items: center;
+  }
+}

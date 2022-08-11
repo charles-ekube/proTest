@@ -1,0 +1,64 @@
+.contactContainer {
+  background: #f1f8ff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.leftContainer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 20px;
+}
+.rightsContainer {
+  background-color: #fff;
+  padding: 133px 120px 83px;
+}
+.leftContainer img {
+  margin-top: 40px;
+}
+.leftText p {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: "GilroyBold", sans-serif;
+}
+.inputsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+.formContainer {
+  padding: 30px 0 0 0;
+}
+.ft {
+  color: rgba(115, 114, 147, 1);
+  padding: 20px 0 0 0;
+  line-height: 25px;
+  font-size: 1rem;
+  font-family: "GilroyRegular", sans-serif;
+}
+
+@media screen and (min-width: 280px) and (max-width: 900px) {
+  .rightsContainer {
+    background-color: #fff;
+    padding: 20px;
+  }
+  .leftContainer {
+    padding: 20px;
+  }
+  .contactContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .leftText p {
+    font-size: 1.5rem;
+  }
+  .leftText {
+    padding: 20px;
+  }
+  .leftContainer img {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,161 @@
+/* Input  */
+.inputContainer {
+  margin-bottom: 20px;
+}
+.labelText {
+  font-family: "GilroyMedium", sans-serif;
+  font-size: 14px;
+}
+.inputBox {
+  border: 1px solid rgba(173, 173, 173, 1);
+  border-radius: 13px;
+  padding: 16px;
+  margin-top: 5px;
+  display: flex;
+  height: 16px;
+  align-items: center;
+  justify-content: space-between;
+}
+.selectInputBox {
+  border: 1px solid rgba(173, 173, 173, 1);
+  border-radius: 13px;
+  padding: 15px 16px;
+  /* height: 40px; */
+  margin-top: 5px;
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+}
+::placeholder {
+  color: #7e7e7e;
+  font-size: 14px;
+  font-family: "GilroyMedium", sans-serif;
+}
+.input {
+  border: none;
+  height: 100%;
+  outline: none;
+  width: 90%;
+  background: transparent;
+}
+
+/* Buttons  */
+.buttonContainer {
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 13px;
+  border: none;
+  cursor: pointer;
+}
+.buttonText {
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+}
+
+/* checkbox */
+
+.checkBoxContainer {
+  display: flex;
+  align-items: center;
+}
+.checkBox {
+  border: 1.5px solid rgba(115, 114, 147, 1);
+  border-radius: 5px;
+  height: 15px;
+  width: 15px;
+  display: flex;
+  margin-right: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkBoxText {
+  color: rgba(76, 76, 76, 1);
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+}
+.dropDownModal {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 16px;
+  position: absolute;
+  z-index: 10;
+  transition: all 0.3s ease-in-out 0s;
+  overflow: auto;
+  height: auto;
+  /* width: auto; */
+}
+.statesModal {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 16px;
+  position: absolute;
+  z-index: 10;
+  transition: all 0.3s ease-in-out 0s;
+  overflow: auto;
+  height: 100px;
+  width: 100%;
+  top: 75px;
+}
+.selected {
+  background-color: #d1d1d1;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.loaderContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+  align-items: center;
+}
+.loaderBall {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #3473ef;
+}
+.loaderText {
+  font-family: "Outfit", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Modal  */
+
+.modalWrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Loader  */
+
+.loader {
+  height: 30px;
+  width: 30px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  border-top: #000000;
+  animation: circular-loader 2s linear infinite;
+}
+
+@keyframes circular-loader {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

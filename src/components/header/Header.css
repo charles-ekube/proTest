@@ -1,0 +1,12 @@
+.headerTitleText {
+  font-family: "GilroyMedium", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 52.8px;
+  color: #073183;
+}
+@media screen and (min-width: 280px) and (max-width: 900px) {
+  .headerTitleText {
+    font-size: 22px;
+  }
+}

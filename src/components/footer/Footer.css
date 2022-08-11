@@ -1,0 +1,15 @@
+.footerContainer {
+  background-image: url("../../assets/images/footer.svg");
+  height: 224px;
+  width: 100%;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: #fff;
+  font-size: 0.875em;
+  font-family: "Outfit", sans-serif;
+  padding: 0 0 24px 0;
+}

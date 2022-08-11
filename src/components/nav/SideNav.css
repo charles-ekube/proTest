@@ -1,0 +1,68 @@
+.sideNavContainer {
+  background-color: #3473ef;
+  height: 100vh;
+  width: 225px !important;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+.sideNavContainer li {
+  padding: 22px 34px;
+  color: #fff;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.sideNavContainer li span {
+  margin-left: 16px;
+}
+
+.topNavContainer {
+  padding: 16px 30px;
+  background-color: #fff;
+  right: 0;
+  left: 0;
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 4;
+}
+.userName {
+  font-family: "Outfit", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #000;
+  text-transform: capitalize;
+}
+.userTitle {
+  color: #737293;
+  font-family: "Outfit", sans-serif;
+  font-size: 0.75rem;
+  font-weight: normal;
+  text-align: right;
+}
+
+.userAvatar {
+  width: 32px;
+  height: 32px;
+  margin-left: 10px;
+}
+.userAvatar img {
+  width: 100%;
+  height: 100%;
+}
+.navLinks {
+  color: #fff;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}

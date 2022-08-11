@@ -1,0 +1,64 @@
+.howContainer {
+  padding: 30px 0;
+  /* background: #fbfcff; */
+}
+.active {
+  padding: 30px 20px;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out 0s;
+}
+.inactive {
+  margin: 20px 0;
+}
+.howGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 50px 120px;
+  gap: 30px;
+}
+
+.activeToggler {
+  color: rgba(52, 115, 239, 1);
+  font-size: 32px;
+  font-weight: 400;
+  font-family: "GilroyRegular", sans-serif;
+}
+.inactiveToggler {
+  font-size: 32px;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.inner {
+  color: #8a8a8a;
+  padding: 10px 0;
+  font-size: 18px;
+  font-family: "GilroyRegular", sans-serif;
+}
+.btnFlex {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+@media screen and (min-width: 280px) and (max-width: 900px) {
+  .howContainer {
+    padding: 20px;
+  }
+  .howGrid {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px;
+  }
+  .active {
+    padding: 10px;
+  }
+  .activeToggler {
+    font-size: 22px;
+  }
+  .inactiveToggler {
+    font-size: 22px;
+  }
+  .inner {
+    font-size: 16px;
+  }
+}

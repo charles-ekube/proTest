@@ -1,0 +1,38 @@
+.settingsContainer {
+  padding-top: 77px;
+  margin-top: 70px;
+  /* width: 100%; */
+}
+.settingsHeader {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: 500;
+}
+.tabFonts {
+  font-family: "Outfit", sans-serif !important;
+  font-size: 0.875rem !important;
+  text-transform: none !important;
+  /* color: #4c4c4c !important; */
+}
+.notificationContainer {
+  display: flex;
+}
+.largeText {
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #4c4c4c;
+}
+.smallText {
+  font-family: "Outfit", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #737293;
+}
+.detailsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  padding-right: 240px;
+}

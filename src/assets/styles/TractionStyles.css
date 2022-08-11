@@ -1,0 +1,82 @@
+.tractionContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.tractionLeft {
+  background-color: #3473ef;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tractionRight {
+  background: #f5f8fe;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.imageCardHolder {
+  position: relative;
+  border-radius: 12px;
+}
+.imageCardHolderOver {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+  transition: all 0.3s ease-in-out 0s;
+  border-radius: 12px;
+}
+.imageCardHolderOver div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+}
+.imageCardHolder:hover .imageCardHolderOver {
+  display: block;
+}
+
+.imageCardHolder img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+.tractionLeft p {
+  font-weight: 700;
+  font-family: "GilroyBold", sans-serif;
+  font-size: 32px;
+  text-align: center;
+  color: #fff;
+}
+.imageCardTitle {
+  text-align: center;
+  color: #fff;
+  font-family: "GilroyMedium", sans-serif;
+  font-size: 22px;
+}
+.imageCardLink {
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  font-family: "GilroyMedium", sans-serif;
+}
+.imageCardLink:hover {
+  color: red;
+}
+
+@media screen and (min-width: 280px) and (max-width: 900px) {
+  .tractionContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .tractionLeft p {
+    font-size: 22px;
+  }
+}

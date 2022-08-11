@@ -1,0 +1,49 @@
+.aboutContainer {
+  padding: 90px 120px;
+  background-color: #f4fffe;
+  display: grid;
+  gap: 20px;
+  /* grid-template-columns: repeat(2, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+}
+.aboutContainer img {
+  width: 100%;
+}
+.aboutSubContainer {
+  background: #fff;
+  padding: 50px 120px;
+}
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.text {
+  font-family: "GilroyRegular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.125em;
+  line-height: 150%;
+  color: #8a8a8a;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 280px) and (max-width: 900px) {
+  .aboutContainer {
+    padding: 20px;
+    /* grid-template-columns: repeat(1, 1fr); */
+    gap: 20px;
+  }
+
+  .text {
+    font-size: 0.8rem;
+  }
+  .aboutSubContainer {
+    padding: 20px;
+  }
+  .cardGrid {
+    justify-content: center;
+  }
+}
