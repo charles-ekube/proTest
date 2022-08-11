@@ -1,12 +1,10 @@
 import { combineReducers } from 'redux';
 import { SIGNOUT_USER_SUCCESSFUL } from '../Types';
 import AuthReducer from './AuthReducer';
-import EquipmentsReducer from './EquipmentsReducer';
 import LoansReducers from './LoansReducers';
 
 const appReducer = combineReducers({
     auth: AuthReducer,
-    equipments: EquipmentsReducer,
     loans: LoansReducers,
 });
 

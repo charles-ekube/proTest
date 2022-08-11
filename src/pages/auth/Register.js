@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { useForm } from 'react-hook-form'
-import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { Link } from "react-router-dom";
 import PasswordShow from '../../assets/images/svg/PasswordShow';
@@ -15,7 +13,6 @@ import Loading from '../../utils/Loading';
 import { connect, } from 'react-redux';
 import { toast } from 'react-toastify';
 import { signup } from '../../redux/actions/AuthActions';
-import { registerUser } from '../../slice/UserAction';
 
 const Register = (props) => {
 

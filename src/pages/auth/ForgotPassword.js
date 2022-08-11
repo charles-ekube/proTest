@@ -16,7 +16,6 @@ const ForgotPassword = (props) => {
 
 
     const { userData, loadingUser } = useSelector(state => state.auth)
-    // console.log(userData, loadingUser)
 
     const [email, setEmail] = useState('');
 

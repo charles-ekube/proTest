@@ -1,4 +1,4 @@
-import { LOGIN_SUCCESS, LOGIN_FAIL, LOADING_USER, SIGNOUT_USER_FAIL, UPDATE_ALERT_MESSAGE, GETTING_PROFILE_SUCCESSFUL, GETTING_PROFILE_FAIL, } from '../Types';
+import { LOGIN_SUCCESS, LOGIN_FAIL, LOADING_USER, SIGNOUT_USER_FAIL, } from '../Types';
 
 const INITIAL_STATE = {
     loadingUser: false,
@@ -19,14 +19,6 @@ export default (state = INITIAL_STATE, { type, payload }) => {
             return { ...state, error: payload, userData: {}, loadingUser: false };
         case SIGNOUT_USER_FAIL:
             return { ...state, error: payload };
-        case UPDATE_ALERT_MESSAGE:
-            return { ...state, alertMessage: payload }
-        case GETTING_PROFILE_SUCCESSFUL:
-            return { ...state, profile: payload }
-        case GETTING_PROFILE_FAIL:
-            return { ...state, profileError: payload }
-
-
         default:
             return state;
     }
