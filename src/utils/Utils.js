@@ -1,6 +1,6 @@
 import axios from "axios";
 
-
+const apiRootUrl = 'http://api.theproaktif.com'
 
 const getUserToken = () => {
     try {
@@ -39,7 +39,7 @@ const http = {
                 const response = await axios({
                     method,
                     url,
-                    // baseURL: apiRootUrl,
+                    baseURL: apiRootUrl,
                     data,
                     // ...obj,
                     ...options
