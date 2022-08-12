@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const apiRootUrl = 'http://api.theproaktif.com'
+const apiRootUrl = ' https://cors-everywhere.herokuapp.com/http://api.theproaktif.com'
 
 const getUserToken = () => {
     try {
