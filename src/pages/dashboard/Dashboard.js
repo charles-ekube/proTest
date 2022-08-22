@@ -1,19 +1,16 @@
-import React, { useState } from 'react'
-import CustomInputDrop from '../../utils/CustomInputDropDown'
+import React, { useEffect, useState } from 'react'
+// import CustomInputDrop from '../../utils/CustomInputDropDown'
 import PageTitle from '../../utils/PageTitle'
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import CustomTable from '../../utils/CustomTable';
-import CustomTableRows from '../../utils/CustomTableRows';
 import LoanTable from '../tables/LoanTable';
-import { useSelector } from 'react-redux';
 import SearchInput from '../../components/searchComponent/SearchInput';
 import { filterOptions } from '../../utils/Helpers';
 import http from '../../utils/Utils';
-import Loading from '../../utils/Loading';
+// import Loading from '../../utils/Loading';
 
 
 
@@ -66,11 +63,16 @@ const Dashboard = () => {
     const [selectedValue, setSelectedValue] = useState(null)
     console.log(selectedValue)
 
-    const getFixedPlans = async () => {
+    useEffect(() => {
+        getLoans();
+    }, [])
+
+    const getLoans = async () => {
         setState({ ...state, loading: true })
         try {
-            const res = await http.get(`/api/provider?filter=${selectedValue.name}`);
+            const res = await http.get(`/api/provider?filter=${selectedValue?.name || filterOptions[0].name}`);
             setState({ ...state, loading: false, data: res.result })
+            console.log(res)
             // setSelectedValue(null)
         } catch (error) {
             console.log('Error', error);
@@ -80,32 +82,6 @@ const Dashboard = () => {
         }
     }
 
-
-
-    // const renderLoanDetails = () => {
-    //     const { data, loading } = state
-    //     if (loading) {
-    //         return <Loading />
-    //     }
-    //     if (data.length !== 0) {
-    //         return data.map((item, index) => {
-    //             return (
-    //                 <>
-    //                     <p>{item}</p>
-    //                 </>
-    //             )
-    //         })
-    //     }
-    //     if (data.length === 0 && !loading) {
-    //         return (
-    //             <>
-    //                 <p className={'f30 textCenter boldText'}>No Data</p>
-    //             </>
-    //         )
-    //     }
-    // }
-
-
     return (
         <>
             <main style={{ paddingTop: '100px' }}>
@@ -113,7 +89,7 @@ const Dashboard = () => {
                     <PageTitle title={'Loan Dashboard'} />
                     <SearchInput label={' '} States={filterOptions} value={selectedValue} onChange={(val) => {
                         setSelectedValue(val)
-                        getFixedPlans()
+                        getLoans()
                     }} prompt={'Filter...'} customStyle={{ width: '200px' }} />
                 </section>
                 <section>
