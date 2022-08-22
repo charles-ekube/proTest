@@ -7,7 +7,7 @@ export const addPreference = (obj) => {
         dispatch({ type: ADDING_PREFERENCE })
         return new Promise(async (resolve, reject) => {
             try {
-                const res = await http.post('/api/preference1', obj)
+                const res = await http.post('/api/preference', obj)
                 const data = res
                 console.log('Preference data ', res)
                 dispatch({ type: ADDING_PREFERENCE_SUCCESS, payload: data });
