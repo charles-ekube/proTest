@@ -44,37 +44,38 @@ const Login = (props) => {
     }
 
     const submit = async () => {
+         navigate('/dashboard');
         const obj = { email, password }
-        console.log(obj)
-        setState({ ...state, loading: true })
-        try {
-            const res = await props.login(obj)
-            console.log('res', res)
-            setState({ ...state, loading: false })
-            toast.success(res.result, {
-                position: "top-right",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-            });
-            navigate('/dashboard');
-        } catch (error) {
-            console.log('catched error ', error)
-            setState({ ...state, loading: false })
-            const errorMessage = error[1].result
-            toast.error(errorMessage, {
-                position: "top-right",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-            });
-        }
+        // console.log(obj)
+        // setState({ ...state, loading: true })
+        // try {
+        //     const res = await props.login(obj)
+        //     console.log('res', res)
+        //     setState({ ...state, loading: false })
+        //     toast.success(res.result, {
+        //         position: "top-right",
+        //         autoClose: 5000,
+        //         hideProgressBar: false,
+        //         closeOnClick: true,
+        //         pauseOnHover: true,
+        //         draggable: true,
+        //         progress: undefined,
+        //     });
+           
+        // } catch (error) {
+        //     console.log('catched error ', error)
+        //     setState({ ...state, loading: false })
+        //     const errorMessage = error[1].result
+        //     toast.error(errorMessage, {
+        //         position: "top-right",
+        //         autoClose: 5000,
+        //         hideProgressBar: false,
+        //         closeOnClick: true,
+        //         pauseOnHover: true,
+        //         draggable: true,
+        //         progress: undefined,
+        //     });
+        // }
 
     }
 
